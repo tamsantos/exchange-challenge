@@ -47,7 +47,7 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 11rem;
+  margin-top: 10rem;
   text-shadow: 2px 2px rgba(0,0,0,0.5);
   letter-spacing: 1px;
 }
@@ -105,6 +105,20 @@ h1 {
   padding: .75rem 8px;
   width: 100%;
   color: $yellow;
+}
+
+#quantity, #result {
+  border-bottom: 1px solid $yellow;
+  color: $grey;
+  font-weight: 700;
+}
+
+#change_currency {
+  color: $yellow;
+  padding: 0 0 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
 }
 
 .btn {

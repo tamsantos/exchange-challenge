@@ -14,9 +14,15 @@
             <%= select_tag "currency", options_for_select(currency_select, "BRL"), class: "form-control", id: "currency" %>
           </div>
           <div class="form-group">
-            <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Quantidade ($10)" step="any" required>
+            <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Digite um valor ($10)" step="any" required>
+          </div>
+          <div class="form-group change_currency_values">
+            <a href="#" id="change_currency">
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+        
         <div class="destination_currency">
           <div class="form-group">
             <p class="title">Moeda Pretendida</p>
@@ -25,9 +31,6 @@
           <div class="form-group">
             <input type="text" id="result" name="result" class="form-control" placeholder="Resultado" readonly>
           </div>
-        </div>
-        <div>
-          <button type="submit" class="btn">CONVERTER</button>
         </div>
       <% end %>
     </div>
