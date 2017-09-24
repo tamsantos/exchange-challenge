@@ -38,7 +38,7 @@ body {
 .right-content {
   background: linear-gradient($yellow, transparent),
               linear-gradient(0deg, $blue, transparent 50%),
-              $yellow url('bg-img.jpeg') no-repeat;
+              $yellow image-url('bg-img.jpeg') no-repeat;
   background-size: cover;
   width: 60%;
   border-radius: 0 1% 1% 0;
