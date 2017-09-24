@@ -8,17 +8,22 @@ body {
   background: -o-linear-gradient(135deg, $blue, $yellow); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(135deg, $blue, $yellow); /* For Firefox 3.6 to 15 */
   background: linear-gradient(135deg, $blue, $yellow); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
   width: 80%;
+  max-width: 810px;
   margin: 10vh auto;
 }
 
 .card-bg {
   width: 100%;
-  height: 80vh;
+  // height: 80vh;
+  // max-height: 552px;
   background-color: $white;
   border-radius: 1%;
   -webkit-box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
@@ -26,9 +31,30 @@ body {
   box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
 }
 
+.left-content {
+  width: 40%;
+}
+
+.right-content {
+  background: linear-gradient($yellow, transparent),
+              linear-gradient(0deg, $blue, transparent 50%),
+              $yellow url('bg-img.jpeg') no-repeat;
+  background-size: cover;
+  width: 60%;
+  border-radius: 0 1% 1% 0;
+  color: $white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 11rem;
+  text-shadow: 2px 2px rgba(0,0,0,0.5);
+  letter-spacing: 1px;
+}
+
 .logo-box {
   background-color: $yellow;
-  border-radius: 1% 1% 0 0;
+  border-radius: 1% 0 0 0;
   padding: 20px;
 }
 
@@ -39,9 +65,9 @@ body {
 }
 
 .exchange-box {
-  margin-top: 1rem;
-  padding: 15px;
+  display: flex;
 }
+
 
 .text-center {
   text-align: center;
@@ -55,10 +81,11 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   padding-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .card-block {
-  margin-top: 2rem;
+  padding: 15px;
 }
 
 .title {
@@ -89,4 +116,14 @@ body {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 950px) {
+  .left-content {
+    width: 100%;
+  }
+  .right-content {
+    display: none;
+  }
 }
