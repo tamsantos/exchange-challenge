@@ -12,7 +12,7 @@ With this application you can convert and compare currencies.
 
 ### How does it work?
 
-You can select a currency from a list of otpions and type the amount you whant to convert and the application does the convertion. The results are from the [fixer.io API](http://fixer.io/)
+You can select a currency from a list of otpions and type the amount you want to convert and the application does the convertion. The results are from the [fixer.io API](http://fixer.io/)
 
 ## First Setup
 
