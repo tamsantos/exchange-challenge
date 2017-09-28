@@ -7,8 +7,8 @@ $(document).ready ->
     currency = $('#currency').val()
     currency_destination = $('#currency_destination').val()
 
-    $("#currency").val(currency_destination)
-    $("#currency_destination").val(currency)
+    $('#currency').val(currency_destination)
+    $('#currency_destination').val(currency)
 
     exchange()
 
@@ -17,9 +17,9 @@ exchange = () ->
       type: 'POST'
       dataType: 'json'
       data: {
-              currency: $("#currency").val(),
-              currency_destination: $("#currency_destination").val(),
-              quantity: $("#quantity").val()
+              currency: $('#currency').val(),
+              currency_destination: $('#currency_destination').val(),
+              quantity: $('#quantity').val()
             }
       error: (jqXHR, textStatus, errorThrown) ->
         alert textStatus
